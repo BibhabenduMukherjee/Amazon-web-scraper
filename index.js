@@ -3,7 +3,7 @@ const app = express();
 const request = require("request-promise");
 
 const PORT = process.env.PORT || 5000;
-
+// all secret token in .env
 const genApiStr = (apikey) =>
   `http://api.scraperapi.com?api_key=${apikey}&autoparse=true`;
 // json parser
